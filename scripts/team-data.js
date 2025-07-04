@@ -9,7 +9,7 @@ const team = [
     projects: [
       {
         title: "Barcega's Projects",
-        description: "Check out our detailed projects like Car Rental Calculator, Animal Identifier, Discount Checker, and more..",
+        description: "projects like Car Rental Calculator, Animal Identifier, Discount Checker, and more using c++",
         link: "https://aaronjef09.github.io/portfolio/project.html"
       }
     ]
@@ -19,13 +19,13 @@ const team = [
     name: "Ashley Almozara",
     role: "...",
     github: "https://github.com/shleyxx",
-    portfolio: "https://github.com/shleyxx",
+    portfolio: "https://shleyxx.github.io/",
     bio: "Builds robust server-side systems and APIs.",
     projects: [
       {
         title: "Almozara's Projects",
-        description: "(lalagyan palang)",
-        link: "https://github.com/shleyxx"
+        description: "C++ program about animal identifier and a register system",
+        link: "https://shleyxx.github.io/projects2/project.html"
       }
     ]
   },
@@ -54,7 +54,7 @@ const team = [
     projects: [
       {
         title: "De Luna's Projects",
-        description: "(Coffee Shop ordering system and Calculator)",
+        description: "Coffee Shop ordering system and Calculator",
         link: "https://johnzed899.github.io/PROJECTS/project.html"
       }
     ]
