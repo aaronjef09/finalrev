@@ -1,0 +1,305 @@
+body {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  font-family: 'Segoe UI', sans-serif;
+  color: #f1f5f9;
+}
+
+.navbar {
+  background: #0d1117 !important;
+  border-bottom: 2px solid #1f6feb;
+}
+
+.navbar-brand {
+  font-family: 'Courier New', monospace;
+  color: #58a6ff !important;
+}
+
+.section-title {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #60a5fa;
+}
+
+.profile-card {
+  background: #1e293b;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 100%;
+  border: 1px solid #334155;
+}
+
+.profile-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #3b82f6aa;
+}
+
+.profile-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3b82f6;
+}
+
+.btn-github {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 14px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-github:hover {
+  background-color: #2563eb;
+}
+
+.btn-portfolio {
+  background-color: transparent;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  border-radius: 20px;
+  padding: 6px 14px;
+  margin: 5px;
+  transition: all 0.3s;
+}
+
+.btn-portfolio:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.projects-card {
+  background: #1e293b;
+  border-left: 5px solid #3b82f6;
+  color: #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.skill-badge {
+  font-size: 1rem;
+  margin: 5px;
+  background-color: #1e40af;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #3b82f6;
+  display: inline-block;
+}
+
+footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 20px 0;
+  margin-top: 50px;
+  border-top: 1px solid #334155;
+}
+
+#profile-modal .modal-content {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.skill-item {
+  width: 120px;
+  height: 120px;
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 1px solid #334155;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+  background: rgba(30, 41, 59, 0.9);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1.2);
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  text-align: center;
+}
+
+.skill-html { color: #e34c26; }
+.skill-css { color: #264de4; }
+.skill-js { color: #f0db4f; }
+.skill-bootstrap { color: #7952b3; }
+.skill-git { color: #f34f29; }
+.skill-react { color: #61dbfb; }
+.skill-node { color: #68a063; }
+.skill-python { color: #3776ab; }
+
+.skill-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.1),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.skill-item:hover::before {
+  left: 100%;
+}
+
+.skills-scroll-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.skills-scroll-container::before,
+.skills-scroll-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.skills-scroll-container::before {
+  left: 0;
+  background: linear-gradient(to right, #0f172a, transparent);
+}
+
+.skills-scroll-container::after {
+  right: 0;
+  background: linear-gradient(to left, #0f172a, transparent);
+}
+
+.skills-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #1e293b;
+  align-items: center;
+}
+
+.skills-container::-webkit-scrollbar {
+  height: 8px;
+}
+.skills-container::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 10px;
+}
+.skills-container::-webkit-scrollbar-thumb {
+  background-color: #3b82f6;
+  border-radius: 10px;
+}
+
+.skill-item {
+  min-width: 100px;
+  height: 100px;
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 1px solid #334155;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  border-color: #3b82f6;
+  background: rgba(30, 41, 59, 0.9);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1.3) rotate(10deg);
+}
+
+.skill-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  text-align: center;
+}
+
+.skill-html { color: #e34c26; }
+.skill-css { color: #264de4; }
+.skill-js { color: #f0db4f; }
+.skill-bootstrap { color: #7952b3; }
+.skill-git { color: #f34f29; }
+.skill-react { color: #61dbfb; }
+.skill-node { color: #68a063; }
+.skill-python { color: #3776ab; }
+
+.skill-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.skill-item:hover::before {
+  left: 100%;
+}

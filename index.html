@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevGuard Team Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <style>
+    .team-card {
+      transition: all 0.3s ease;
+    }
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 3px solid #3b82f6;
+    }
+    .btn-action {
+      min-width: 120px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="fas fa-shield-alt me-2"></i> RevGuard Team
+      </a>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2 class="section-title">Meet Our Team</h2>
+    <div class="row justify-content-center g-4" id="team-container"></div>
+
+    <h2 class="section-title">Our Skills</h2>
+    <div class="skills-scroll-container">
+      <div class="skills-container" id="skills-container"></div>
+    </div>
+
+    <h2 class="section-title">Projects</h2>
+    <div class="row justify-content-center g-4" id="projects-container"></div>
+
+    <h2 class="section-title">Featured Project</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="card p-4 projects-card">
+          <h4><i class="fas fa-utensils me-2"></i>RJ AND A CATERING SERVICES</h4>
+          <p>A complete catering reservation and management system with real-time booking capabilities.</p>
+          <a href="https://azi1408.github.io/recentproject/" target="_blank" class="btn btn-github">
+            <i class="fas fa-external-link-alt me-2"></i>View Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2025 RevGuard. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./scripts/team-data.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
